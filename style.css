@@ -16,7 +16,6 @@ header {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -58,18 +57,62 @@ header {
     font-style: italic;
     color: #555;
 }
-/* RESPONSIVE */
 
-/* Tablettes */
+#total-container {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Boutons */
+.add-to-total, .remove-from-total, #reset-total {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-to-total {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.add-to-total:hover {
+    background-color: #45a049;
+}
+
+.remove-from-total {
+    background-color: #f44336;
+    color: white;
+}
+
+.remove-from-total:hover {
+    background-color: #da190b;
+}
+
+#reset-total {
+    background-color: #555;
+    color: white;
+}
+
+#reset-total:hover {
+    background-color: #333;
+}
+
+/* Responsive */
 @media (max-width: 900px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Téléphones */
 @media (max-width: 600px) {
     .container {
         grid-template-columns: 1fr;
     }
 }
+
